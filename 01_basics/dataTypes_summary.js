@@ -33,3 +33,30 @@ console.log(typeof anotherId);
 
 
 // Documentation: https://262.ecma-international.org/5.1/#sec-11.4.3
+
+
+
+
+// ******************* MEMORY *******************
+
+// STACK (Primitive), HEAP (Non-Primitive)
+
+let myGithubname = "Monke-G"
+
+let anothername = myGithubname
+anothername = "Human-G"
+
+console.log(myGithubname);
+console.log(anothername);
+
+let userOne = {
+    Email: "user@google.com",
+    UPI: "user@oksbi",
+}
+
+let userTwo = userOne
+
+userTwo.Email = "pranjal@google.com"
+
+console.log(userOne.Email);
+console.log(userTwo.Email);
